@@ -25,9 +25,9 @@ function! DrawLayout()
     enew
     resize 1
     if has('nvim')
-        call termopen('python /opt/vim-nano/topbar.py')
+        call termopen('python /opt/vnano/topbar.py')
     else
-        terminal ++curwin python . /opt/vim-nano/topbar.py
+        terminal ++curwin python . /opt/vnano/topbar.py
     endif
 
     " File display buffer
@@ -42,10 +42,10 @@ function! DrawLayout()
     resize 3
     enew
     if has('nvim')
-        call termopen('python /opt/vim-nano/botbar.py')
+        call termopen('python /opt/vnano/botbar.py')
         execute "$"
     else
-        terminal ++curwin python . /opt/vim-nano/botbar.py
+        terminal ++curwin python . /opt/vnano/botbar.py
     endif
 
     " Go back to file display buffer
