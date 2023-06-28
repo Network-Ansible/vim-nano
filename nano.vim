@@ -25,9 +25,9 @@ function! DrawLayout()
     enew
     resize 1
     if has('nvim')
-        call termopen('python '.s:path.'/topbar.py')
+        call termopen('python /opt/vim-nano/topbar.py')
     else
-        terminal ++curwin python ./topbar.py
+        terminal ++curwin python . /opt/vim-nano/topbar.py
     endif
 
     " File display buffer
@@ -42,10 +42,10 @@ function! DrawLayout()
     resize 3
     enew
     if has('nvim')
-        call termopen('python '.s:path.'/botbar.py')
+        call termopen('python /opt/vim-nano/botbar.py')
         execute "$"
     else
-        terminal ++curwin python ./botbar.py
+        terminal ++curwin python . /opt/vim-nano/botbar.py
     endif
 
     " Go back to file display buffer
@@ -53,6 +53,9 @@ function! DrawLayout()
 endfunction
 
 set statusline=%#Normal#
+
+" Yaml editing
+autocmd FileType yaml setlocal ai et ts=2 sw=2 nu cuc
 
 " Trying to draw earlier messes things up
 autocmd VimEnter * call DrawLayout()
