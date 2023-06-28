@@ -22,19 +22,19 @@ I just want to see how far I can go with this.
 
 RHEL8
 ```
-$ sudo yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
-$ sudo yum install -y neovim python3-neovim
+sudo yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+sudo yum install -y neovim python3-neovim
 ```
 
 Clone the repo to /opt
 ```
-$ cd /opt
-$ sudo git clone https://github.com/Network-Ansible/vnano.git
+cd /opt
+sudo git clone https://github.com/Network-Ansible/vnano.git
 ```
 
 Alias to .bashrc
 ```
-$ echo "alias vnano='nvim -u /opt/vim-nano/nano.vim'" >> ~/.bashrc
+echo "alias vnano='nvim -u /opt/vim-nano/nano.vim'" >> ~/.bashrc
 ```
 
 ![vim-nano in action](https://raw.githubusercontent.com/nims11/vim-nano/master/screenshot.png)
