@@ -29,7 +29,7 @@ $ sudo yum install -y neovim python3-neovim
 Clone the repo to /opt
 ```
 $ cd /opt
-$ sudo git clone https://github.com/Network-Ansible/vim-nano.git
+$ sudo git clone https://github.com/Network-Ansible/vnano.git
 ```
 
 Alias to .bashrc
