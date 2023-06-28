@@ -19,12 +19,19 @@ I just want to see how far I can go with this.
 - python (should work with 2 or 3, I only test it on py3 nowadays)
 
 # Installation
-Not yet packaged as a plugin, because you don't need a vimrc anyway!
 
+RHEL8
 ```
-$ git clone https://github.com/nims11/vim-nano.git
-$ cd vim-nano/
-$ nvim -u nano.vim
+$ sudo yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+$ sudo yum install -y neovim python3-neovim
 ```
+
+Clone the repo to /opt
+```
+$ cd /opt
+$ sudo git clone https://github.com/nims11/vim-nano.git
+```
+
+Alias to .bashrc
 
 ![vim-nano in action](https://raw.githubusercontent.com/nims11/vim-nano/master/screenshot.png)
