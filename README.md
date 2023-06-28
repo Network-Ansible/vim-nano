@@ -34,7 +34,7 @@ sudo git clone https://github.com/Network-Ansible/vnano.git
 
 Alias to .bashrc
 ```
-echo "alias vnano='nvim -u /opt/vim-nano/nano.vim'" >> ~/.bashrc
+echo "alias vnano='nvim -u /opt/vnano/nano.vim'" >> ~/.bashrc
 ```
 
-![vim-nano in action](https://raw.githubusercontent.com/nims11/vim-nano/master/screenshot.png)
+![vnano in action](https://raw.githubusercontent.com/nims11/vim-nano/master/screenshot.png)
