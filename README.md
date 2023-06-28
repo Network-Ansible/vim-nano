@@ -1,4 +1,4 @@
-# vim-nano
+# vnano
 
 Mighty nano inside a vim.
 
@@ -29,9 +29,12 @@ $ sudo yum install -y neovim python3-neovim
 Clone the repo to /opt
 ```
 $ cd /opt
-$ sudo git clone https://github.com/nims11/vim-nano.git
+$ sudo git clone https://github.com/Network-Ansible/vim-nano.git
 ```
 
 Alias to .bashrc
+```
+$ echo "alias vnano='nvim -u /opt/vim-nano/nano.vim'" >> ~/.bashrc
+```
 
 ![vim-nano in action](https://raw.githubusercontent.com/nims11/vim-nano/master/screenshot.png)
